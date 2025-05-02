@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel=apple-touch-icon-precomposed sizes=57x57 href=favico/apple-touch-icon-57x57.png>
+    <link rel=apple-touch-icon-precomposed sizes=114x114 href=favico/apple-touch-icon-114x114.png>
+    <link rel=apple-touch-icon-precomposed sizes=72x72 href=favico/apple-touch-icon-72x72.png>
+    <link rel=apple-touch-icon-precomposed sizes=144x144 href=favico/apple-touch-icon-144x144.png>
+    <link rel=apple-touch-icon-precomposed sizes=60x60 href=favico/apple-touch-icon-60x60.png>
+    <link rel=apple-touch-icon-precomposed sizes=120x120 href=favico/apple-touch-icon-120x120.png>
+    <link rel=apple-touch-icon-precomposed sizes=76x76 href=favico/apple-touch-icon-76x76.png>
+    <link rel=apple-touch-icon-precomposed sizes=152x152 href=favico/apple-touch-icon-152x152.png>
+    <link rel=icon type=image/png href=favico/favicon-196x196.png sizes=196x196>
+    <link rel=icon type=image/png href=favico/favicon-96x96.png sizes=96x96>
+    <link rel=icon type=image/png href=favico/favicon-32x32.png sizes=32x32>
+    <link rel=icon type=image/png href=favico/favicon-16x16.png sizes=16x16>
+    <link rel=icon type=image/png href=favico/favicon-128.png sizes=128x128>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="PIGMY - The Charming Hedgehog" />
+    <meta property="og:description"
+        content="Meet PIGMY, the tiny hedgehog anomaly—adorable, spiky, and ready to roll into our cozy meme-coin world!" />
+    <meta property="og:image" content="/gif/landingAnimation.gif" />
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PIGMY" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script>
+        if (window.location.hostname !== "") {
+            document.body.innerHTML = "<h1>Access Denied: This site cannot be cloned!</h1>";
+            throw new Error("Invalid domain detected");
+        }
+    </script>
+    <title>PIGMY</title>
+</head>
+
+<body>
+    <img src="./images/playing.png" id="pause" />
+    <img src="./images/paused.png" id="play" />
+    <audio id="beat" loop>
+        <source src="./mp3/lofi-beat.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="wake-up-fren">
+        <h1 class="title"><span class="dollar">$</span>PIGMY</h1>
+        <button id="wake-up-btn">
+            <img src="./images/up.avif" class="wake-up-btn-img" />
+        </button>
+        <img src="./images/01.avif" class="wake-up-img asleep" />
+        <img src="./images/02.gif" class="wake-up-img awake" />
+    </div>
+    <button id="navbar-btn" class="">
+        <span class="navbar-btn-line a"></span>
+        <span class="navbar-btn-line b"></span>
+        <span class="navbar-btn-line c"></span>
+    </button>
+    <nav id="navbar">
+        <div class="navbar-header">
+            <h1 class="title"><span class="dollar">$</span>PIGMY</h1>
+            <div class="sub-title">By PIGMY</div>
+        </div>
+        <div class="navbar-ca">
+            <div class="ca-icon-wrapper">
+                <img src="images/ca.png" class="ca-icon" />
+            </div>
+            <!--CAAAAAAAA-->
+            <div class="ca-text">CA: Coming Soon</div>
+            <span class="ca-tooltip">COPY ADDRESS</span>
+        </div>
+        <img src="./images/l.avif" class="side-quak left-quak navbar-quak" />
+        <div class="navbar-links">
+            <div class="social-icon-wrapper" onClick="scrollToGenerator()">
+                <img src="./images/pfp-generator/icon/icon.avif" class="social-icon" />
+            </div>
+            <a href="https://x.com/" target="_blank" class="social-icon-wrapper">
+                <img src="images/x.png" class="social-icon" />
+            </a>
+            <!--DEX-->
+            <a href="https://dexscreener.com/solana/" target="_blank" class="social-icon-wrapper">
+                <img src="images/dex.png" class="social-icon" />
+            </a>
+            <a href="https://t.me/" target="_blank" class="social-icon-wrapper">
+                <img src="images/tlg.png" class="social-icon" />
+            </a>
+        </div>
+        <div class="navbar-footer">Copyright © PIGMY</div>
+    </nav>
+    <main>
+        <button id="back-to-top">
+            <img src="./images/backToTop.png" class="back-to-top-img" />
+        </button>
+        <h1 class="title"><span class="dollar">$</span>PIGMY</h1>
+        <div class="sub-title">the tiny cute hedgehog anomaly</div>
+        <img src="./gif/landingAnimation.gif" class="landing-animation" />
+        <!--PUMPFUN-->
+        <a href="https://pump.fun/coin/" target="_blank" class="call-to-action">
+            <img src="images/buy.avif" class="call-to-action-img" />
+        </a>
+        <div class="phantom-img-wrapper">
+            <img src="./images/selected_pics/phan.avif" class="phantom-img" />
+        </div>
+        <div class="generator" id="generator">
+            <div class="generator-header">
+                <h1 class="generator-title">PIGMY GENERATOR</h1>
+                <p class="generator-text">Bring your own PIGMY to life!</p>
+            </div>
+            <div class="row-generator">
+                <div class="col-generator">
+                    <div class="generator-img-container">
+                        <img src="./images/pfp-generator/bg/bg1.png" class="generator-img-bg generator-img-el"
+                            id="pfp-bg" alt="Custom quak background" />
+                        <img src="./images/pfp-generator/body-colors/1.png" class="generator-img-color generator-img-el"
+                            id="pfp-color" alt="Custom quak color" />
+                        <img src="./images/pfp-generator/shape/shape.png" class="generator-img-shape generator-img-el"
+                            id="pfp-shape" alt="Custom quak shape" />
+                        <img src="./images/pfp-generator/eyes/1.png" class="generator-img-eyes generator-img-el"
+                            id="pfp-eyes" alt="Custom quak eyes" />
+                        <img src="./images/pfp-generator/accessories/1.png"
+                            class="generator-img-accessory generator-img-el" id="pfp-accessory"
+                            alt="Custom quak accessory" />
+                    </div>
+                </div>
+                <div class="col-generator">
+                    <input type="text" id="name-input" class="generator-name-input" placeholder="Enter your name" />
+                    <div class="generator-btns-container">
+                        <button class="generator-randomize-btn" onClick="randomizeBtn()">
+                            <p class="fs-4 mb-0">Randomize <i class="fa-solid fa-dice ms-2"></i></p>
+                        </button>
+                        <button class="generator-download-btn" id="download-pfp">
+                            <p class="fs-4 mb-0">Download <i class="fa-solid fa-floppy-disk ms-2"></i></p>
+                        </button>
+                    </div>
+                    <div class="generator-choices-container">
+                        <div class="generator-choice-wrapper">
+                            <div class="generator-choice-arrow choice-left"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="generator-choice-text" id="color-choice">Color 1</div>
+                            <div class="generator-choice-arrow choice-right"><i class="fa-solid fa-caret-right"></i>
+                            </div>
+                        </div>
+                        <div class="generator-choice-wrapper">
+                            <div class="generator-choice-arrow choice-left"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="generator-choice-text" id="eyes-choice">Eyes 1</div>
+                            <div class="generator-choice-arrow choice-right"><i class="fa-solid fa-caret-right"></i>
+                            </div>
+                        </div>
+                        <div class="generator-choice-wrapper">
+                            <div class="generator-choice-arrow choice-left"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="generator-choice-text" id="accessory-choice">Accessory 1</div>
+                            <div class="generator-choice-arrow choice-right"><i class="fa-solid fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note-container">
+            <p class="note-text"> This is a meme coin with no inherent value or promise of financial gain.</p>
+            <p class="note-text">Drawing PIGMY has brought endless delight for months, and I won’t stop. I hope it curls
+                into your heart with a warm squeeze.</p>
+            <h1 class="note-thank-you">Thank you.</h1>
+        </div>
+        <img src="./images/r.avif" class="side-quak right-quak" />
+        <div class="text-parallax-container">
+            <div class="text-parallax-wrapper">
+                <div class="text-parallax-row scroll-right">
+                    <span>PIGMY / PRICKLE / SPIKES GO POOF / HEDGEHOGS / </span>
+                    <span>PIGMY / PRICKLE / SPIKES GO POOF / HEDGEHOGS / </span>
+                </div>
+            </div>
+            <div class="text-parallax-wrapper">
+                <div class="text-parallax-row scroll-left">
+                    <span>ROLL / PIGMY / CURL UP / SNUGGLE / SQUEAK / </span>
+                    <span>ROLL / PIGMY / CURL UP / SNUGGLE / SQUEAK / </span>
+                </div>
+            </div>
+            <div class="text-parallax-wrapper">
+                <div class="text-parallax-row scroll-right">
+                    <span>PIGMY / NIBBLE / BERRY TREAT / HEDGIEHOOPS / </span>
+                    <span>PIGMY / NIBBLE / BERRY TREAT / HEDGIEHOOPS / </span>
+                </div>
+            </div>
+            <div class="text-parallax-wrapper">
+                <div class="text-parallax-row scroll-left">
+                    <span>DASH / PIGMY / SPRINT / PRICKLES / HEHE / </span>
+                    <span>DASH / PIGMY / SPRINT / PRICKLES / HEHE / </span>
+                </div>
+            </div>
+        </div>
+        <img src="./images/l.avif" class="side-quak left-quak" />
+        <div class="gallery">
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/1.gif" class="gallery-img" />
+                <img src="./images/borders/border1.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/2.gif" class="gallery-img" />
+                <img src="./images/borders/border2.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/3.gif" class="gallery-img" />
+                <img src="./images/borders/border3.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/4.gif" class="gallery-img" />
+                <img src="./images/borders/border4.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/5.gif" class="gallery-img" />
+                <img src="./images/borders/border5.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/6.gif" class="gallery-img" />
+                <img src="./images/borders/border6.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/7.gif" class="gallery-img" />
+                <img src="./images/borders/border7.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/9.gif" class="gallery-img" />
+                <img src="./images/borders/border8.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/8.gif" class="gallery-img" />
+                <img src="./images/borders/border7.png" class="gallery-img-border" />
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="./images/selected_pics/10.gif" class="gallery-img" />
+                <img src="./images/borders/border8.png" class="gallery-img-border" />
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./images/selected_pics/lov.gif" class="quak-love-img" />
+        <div class="footer-text">Made with ❤️ for the community</div>
+        <div class="copyright">Copyright © PIGMY</div>
+    </footer>
+    <script src="https://kit.fontawesome.com/40248f80b4.js" crossorigin=anonymous></script>
+</body>
+
+</html>
