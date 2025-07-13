@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function copyCa() {
-	const ca = "JbdV3Ughnb123FakeExampleAddressDoNotUse";
+	const ca = "soon";
 	const caTooltip = document.querySelector(".ca-tooltip");
 	navigator.clipboard
 		.writeText(ca)
